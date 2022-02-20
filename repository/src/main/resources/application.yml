@@ -1,0 +1,18 @@
+server:
+  port : 8080
+  error:
+    include-stacktrace: ALWAYS
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookingplatform
+    username: postgres
+    password: postgres
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: INFO
+    root:
+      INFO

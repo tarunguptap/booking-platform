@@ -1,0 +1,1 @@
+mvn clean install liquibase:diff liquibase:update -Dliquibase.username=postgres -Dliquibase.password=postgres -Dliquibase.url=jdbc:postgresql://localhost:5432/bookingplatform -DskipTests

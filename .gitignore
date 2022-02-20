@@ -1,0 +1,10 @@
+**/target/
+.idea/**
+/.idea/*.gitignore
+/.idea/*.xml
+/.idea/libraries/*.xml
+**.iml
+**.gradle**
+**/build/
+**/wrapper/
+**/gradlew**
