@@ -1,5 +1,11 @@
 server:
   port : 8080
+  ssl:
+    key-store: 'classpath:medium.jks'
+    key-store-type: pkcs12
+    key-store-password: password
+    key-password: password
+    key-alias: medium
   error:
     include-stacktrace: ALWAYS
 
