@@ -27,6 +27,7 @@
     <modules>
         <module>repository</module>
         <module>booking-server</module>
+        <module>distributed-lock</module>
     </modules>
     <dependencies>
         <dependency>
@@ -86,6 +87,32 @@
                 <artifactId>lombok</artifactId>
                 <version>1.18.22</version>
                 <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>3.4.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>3.4.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>4.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-test</artifactId>
+                <version>2.12.0</version>
+            </dependency>
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>6.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

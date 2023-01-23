@@ -9,7 +9,16 @@ server:
   error:
     include-stacktrace: ALWAYS
 
+com:
+  organization:
+    zookeeper:
+      path: /seat
+    booking:
+      lockExecutorCount: 10
 
+esb:
+  zookeeper:
+    cluster: 127.0.0.1:2181
 
 spring:
   security:
@@ -40,9 +49,15 @@ spring:
       dialect: org.hibernate.dialect.PostgreSQLDialect
 
 logging:
+  config: logback.xml
   level:
     org:
+      apache:
+        http: INFO
       hibernate:
         type: INFO
     root:
       INFO
+    com:
+      organization:
+        service: INFO
